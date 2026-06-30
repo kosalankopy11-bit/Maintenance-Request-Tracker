@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+
+  background-color: var(--color-green-800);
+ 
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold;
+}
+
+.input {
+  @apply w-full rounded-lg border border-stone-200 bg-white px-3 py-2 text-sm outline-none transition focus:border-mint focus:ring-4 focus:ring-mint/10;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.btn-primary {
+  @apply btn bg-mint text-white hover:bg-mint/90;
+}
+
+.btn-secondary {
+  @apply btn border border-stone-200 bg-white text-ink hover:bg-stone-50;
+}
+
+.card {
+  @apply rounded-lg border border-stone-200 bg-white shadow-soft;
+}
